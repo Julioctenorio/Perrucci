@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f6f7f8;
+}
+
+header h1, .about-services p{
+  text-shadow: 2px 2px 5px red;
+}
+
+footer {
+  position: relative;
+  z-index: 10; /* Garanta que ele está em cima de outros elementos */
+  width: 100%;
+}
+
+footer .bg-stone-700 {
+  padding-bottom: 3rem; /* Ajuste conforme necessário */
+}
+
+footer .w-full {
+  position: fixed;
+  bottom: 0;
+  z-index: 40;
+}
+
+/*cards do sobre*/
+.card{
+  width: 18rem;
+  image: center;
+  aspect-ratio: 1 / 0.7;
+  border-radius: .5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.card .image-box{
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.card .image-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 90%;
+  border-radius: inherit;
+  transition: 0.5s ease-in-out;
+}
+
+.card::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.card:hover img{
+  filter: grayscale(1) brightness(0.4);
+}
+
+.card:hover::after{
+  opacity: 1;
+  inset: 20px;
+}
+
+.content{
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content h3, .content p{
+  opacity: 0;
+  transition: 0.4s 0.2s ease;
+  color: #d1d1d1;
+}
+
+.content h3{
+  margin-bottom: 10px;
+  scale: 0.7;
+  font-size: .85rem;
+}
+
+.content p{
+  font-size: .63rem;
+  line-height: 1.2;
+  transform: translateY(50%);
+}
+
+.card:hover .content h3 {
+  scale: 1;
+  opacity: 1;
+}
+
+.card:hover .content p{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 375px) {
+  .card{
+    width:21.5rem;
+  }
+}
+@media (min-width: 425px) {
+  .card{
+    width:24.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .card{
+    width: 21rem;
+  }
+
+  .content{
+    width: 80%;
+  }
+
+  .content h3{
+    font-size: 1.2rem;
+  }
+
+  .content p{
+    font-size: 10px;
+    line-height: 1.4;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .card{
+    width: 29rem;
+  }
+  .content h3{
+    font-size: 1.55rem;
+  }
+
+  .content p{
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .accordion {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card{
+    width: 37rem;
+  }
+  
+  .content h3{
+    font-size: 2.1rem;
+  }
+
+  .content p{
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}

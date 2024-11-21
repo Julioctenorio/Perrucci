@@ -1,0 +1,2770 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="./styles/./output.css" />
+      
+      <script src="https://kit.fontawesome.com/7480448000.js" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/tw-elements@1.0.0/dist/js/index.min.js"></script>
+      <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js" defer></script>
+
+    <script src="./js/script.js" defer></script>
+
+    <!--META TAG OG-->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Perrucci Sports - A melhor loja de artigos esportivos">
+    <meta property="og:image" content="https://projeto-loja-phi.vercel.app/assets/hamb-1.png">
+    <meta property="og:description" content="A melhor loja de artigos esportivos">
+    <meta property="og:site_name" content="Perrucci Sports">
+
+    <title>Perrucci Sports - A melhor loja de artigos esportivos</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="w-full h-{420px} bg-zinc-900 bg-home bg-cover bg-center">
+      <div class="w-full h-full flex flex-col justify-center items-center backdrop-brightness-25">
+        <img
+          src="./assets/logoperrucci.png"
+          alt="Logo Perrucci Sports"
+          class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200 mt-7"/>
+
+        <h1 class="text-4xl mt-4 mb-2 font-bold text-white text-center">Perrucci Sports</h1>
+
+        <div class="border-4 border-green-500 px-4 py-1 rounded-lg mt-5 mb-10 " id="date-span">
+          <span class="font-medium text-center">Seg à Sab - 10:00 as 20:00</span>
+        </div>
+      </div>
+    </header>
+    
+    <div id="initial"></div>
+    <nav class="flex bg-stone-800 w-full h-14 md:h-14 mx-auto text-center justify-center md:w-3/5 lg:w-2/4 2xl:w-2/5 md:relative md:rounded-md xl:w-[40%] 2xl:relative 2xl:top-0 fixed bottom-0 2xl:rounded-md mt-2 z-[100000]">
+      <ul class="flex font-semibold text-lg xl:text-2xl gap-12 xl:gap-20 xl:font-medium uppercase scroll-smooth">
+        <li class="hover:border-b-2 hover:border-white">
+          <a class="text-gray-400 hover:text-white" href="#start"><i class="fa-solid fa-house fa-sm"></i><p class="text-gray-100 text-xs">Inicio</p></a>          
+        </li>
+        <li class="hover:border-b-2 border-white">
+          <a class="text-gray-400 hover:text-white" href="#about"><i class="fa-solid fa-shirt fa-sm"></i><p class="text-gray-100 text-xs">Camisas</p></a>
+          
+        </li>
+        <li class="hover:border-b-2 border-white">
+          <a class="text-gray-400 hover:text-white" href="#services"><i class="fa-solid   fa-snowflake fa-sm"></i></i><p class="text-gray-100 text-xs">Casacos</p></a>
+        </li>
+        <li class="hover:border-b-2 border-white">
+          <a class="text-gray-400 hover:text-white" href="#info"><i class="fa-solid fa-circle-info fa-sm"></i><p class="text-gray-100 text-xs">Info</p></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--Serviços-->
+    <div class="text-lg xl:text-2xl md:text-2xl font-bold text-center mt-9 mb-6 page-menu"  id="start">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-7 md:gap-10 mx-3 xl:mx-auto max-w-7xl px-2 mb-16">
+        <div class="text-left">
+          <p class="text-green-500 text-xl md:text-2xl xl:text-3xl font-medium uppercase">Produtos de qualidade</p>
+          <h2 class="font-bold py-5 text-2xl md:text-3xl xl:text-4xl text-gray-900">Camisas de primeira linha, feitas com qualidade excepcional para torcedores exigentes!</h2>
+          <p class="font-light md:text-2xl lg:text-2xl xl:text-3xl text-gray-800">Descubra a excelência em cada detalhe! Nossas camisas de futebol unem design autêntico e materiais de alta qualidade, oferecendo conforto e durabilidade para você vibrar com seu time de coração.</p>
+        </div>
+        <div>
+          <img class="rounded-md" src="./assets/secondlogo2.jpg" alt="">
+        </div>  
+      </div>
+      
+
+      <!-- Slides -->
+      
+      <div class="about-services">
+        <h2 class="text-lg xl:text-3xl md:text-3xl font-bold text-center mt-2 mb-7 xl:mb-8 uppercase">Nossas Camisas</h2>
+        <div class="relative w-full max-w-4xl mx-auto">
+        <!-- Carousel wrapper -->
+          <div class="overflow-hidden relative rounded-lg">
+          <div
+            class="flex transition-transform duration-500 ease-in-out transform"
+            id="carousel">
+          <!-- Slide 1 -->
+          <div class="min-w-full">
+            <p class="absolute z-10 text-white pl-10 bottom-10 underline opacity-60">Camisa</p>
+            <p class="absolute z-10 text-white pl-10 bottom-6 text-sm opacity-60">Torcedor</p>
+            <img
+              src="./assets/torcedor/manc1.jpg"
+              alt="Slide 1"
+              class="w-full h-full object-cover" />
+          </div>
+          <!-- Slide 2 -->
+          <div class="min-w-full">
+            <p class="absolute z-10 text-white pl-10 bottom-10 underline opacity-60">Camisa</p>
+            <p class="absolute z-10 text-white pl-10 bottom-6 text-sm opacity-60">Torcedor</p>
+            <img
+              src="./assets/torcedor/intermiami2.jpg"
+              alt="Slide 2"
+              class="w-full h-full object-cover" />
+          </div>
+          <!-- Slide 3 -->
+          <div class="min-w-full">
+            <p class="absolute z-10 text-white pl-10 bottom-10 underline opacity-60">Camisa</p>
+            <p class="absolute z-10 text-white pl-10 bottom-6 text-sm opacity-60">Torcedor</p>
+            <img
+              src="./assets/torcedor/sp2.jpg"
+              alt="Slide 3"
+              class="w-full h-full object-cover" />
+          </div>
+          <!-- Slide 4 -->
+          <div class="min-w-full">
+            <p class="absolute z-10 text-white pl-10 bottom-10 underline opacity-60">Camisa</p>
+            <p class="absolute z-10 text-white pl-10 bottom-6 text-sm opacity-60">Jogador</p>
+            <img
+              src="./assets/jogador/fla-jogador1.jpg"
+              alt="Slide 3"
+              class="w-full h-full object-cover" />
+          </div>
+          <!-- Slide 5 -->
+          <div class="min-w-full">
+            <p class="absolute z-10 text-white pl-10 bottom-10 underline opacity-60">Camisa</p>
+            <p class="absolute z-10 text-white pl-10 bottom-6 text-sm opacity-60">Jogador</p>
+            <img
+              src="./assets/jogador/intermilao-jogador1.jpg"
+              alt="Slide 3"
+              class="w-full h-full object-cover" />
+          </div>
+          <!-- Slide 6 -->
+          <div class="min-w-full">
+            <p class="absolute z-10 text-white pl-10 bottom-10 underline opacity-60">Camisa</p>
+            <p class="absolute z-10 text-white pl-10 bottom-6 text-sm opacity-60">Jogador</p>
+            <img
+              src="./assets/jogador/arg-jogador1.jpg"
+              alt="Slide 3"
+              class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+
+    <!-- Navigation buttons -->
+      <button
+        class="absolute top-1/2 left-0 transform -translate-y-1/2 p-3 bg-gray-700 bg-opacity-50 rounded-full text-white hover:bg-opacity-75 focus:outline-none"
+        onclick="scrollCarousel(-1)">
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"></path>
+        </svg>
+      </button>
+      <button
+        class="absolute top-1/2 right-0 transform -translate-y-1/2 p-3 bg-gray-700 bg-opacity-50 rounded-full text-white hover:bg-opacity-75 focus:outline-none"
+        onclick="scrollCarousel(1)">
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+    <p class=" text-center text-gray-900 text-lg font-light my-10">
+      Para acessar mais imagens e obter informações detalhadas, acompanhe-nos em nossas redes sociais. Os links estão disponíveis abaixo.
+    </p>
+  </div>
+</div>
+
+    <!--Sobre -->
+    <div class=" page-menu hidden"  id="about">
+
+      <!-- Menu de seleção -->
+      <div class="flex items-end flex-col gap-0 mt-1 mr-2">
+        <select id="model" class="w-30 text-center border-r-2" onchange="location.href=this.value;">
+          <option value="#Torcedor" href="#Jogador">Torcedor</option>
+          <option value="#Jogador" href="#Jogador">Jogador</option>
+          <option value="#Baby" href="#Baby">Baby</option>
+        </select>
+      </div>
+
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-800 uppercase text-center mt-9 mb-6 border-b-2">
+        Camisa Torcedor
+      </h2>
+  
+      <!--Inicio menu-->
+      <div class="menu">
+  
+        <main class="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="Torcedor">
+        
+        <!--Produto 1-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/alhilal1.webp" alt="Camisa Adidas" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Adidas</p>
+            <p class="text-sm text-gray-800">Camisa principal Adidas modelo Torcedor</p>
+        
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Atlético-MG Torcedor (Com patrocinador)" data-name="Camisa Atlético-MG Torcedor (Com patrocinador)" data-price="30.00">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+  
+        <!--Produto 2-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/arg1.jpg" alt="Camisa Flamengo Preto" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Argentina</p>
+            <p class="text-sm text-gray-800">Camisa Argentina principal modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Argentina" data-name="Camisa Argentina" data-price="30.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+  
+        <!--Produto 3-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/AtlMg2.jpg" alt="Camisa Atlético-MG" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Atlético-MG</p>
+            <p class="text-sm text-gray-800">Camisa principal Atlético-MG modelo Torcedor (Sem patrocinador).</p>
+  
+              <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Atlético-MG" data-name="Camisa Atlético-MG" data-price="30.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+  
+        <!--Produto 4-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/AtlMg3.jpg" alt="Camisa Atlético-MG Torcedor (Com patrocinador)" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Atlético-MG</p>
+            <p class="text-sm text-gray-800">Camisa principal Atlético-MG modelo Torcedor (Com patrocinador).</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Atlético-MG Torcedor (Com patrocinador)" data-name="Camisa Atlético-MG Torcedor (Com patrocinador)" data-price="30.00">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+      
+        <!--Produto 5-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/AtlMg1.jpg" alt="Camisa Atlético-MG ED. Especial" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Atlético-MG</p>
+            <p class="text-sm text-gray-800">Camisa Atlético-MG ED. Especial modelo Torcedor</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Atlético-MG ED. Especial" data-name="Camisa Atlético-MG ED. Especial" data-price="30.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+  
+        <!--Produto 6-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/barc1.jpg" alt="Camisa Barcelona" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Barcelona</p>
+            <p class="text-sm text-gray-800">Camisa principal Barcelona modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Barcelona" data-name="Camisa Barcelona" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 7-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/bayrnm1.webp" alt="Camisa Bayern de Munique" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Bayern de Munique</p>
+            <p class="text-sm text-gray-800">Camisa visitante Bayern de Munique modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Bayern de Munique" data-name="Camisa Bayern de Munique" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 8-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/benfica1.jpg" alt="Camisa Benfica" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Benfica</p>
+            <p class="text-sm text-gray-800">Camisa principal Benfica modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Benfica" data-name="Camisa Benfica" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 9-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/benfica2.jpg" alt="Camisa Benfica 2" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Benfica 2</p>
+            <p class="text-sm text-gray-800">Camisa visitante Benfica modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Benfica 2" data-name="Camisa Benfica 2" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 10-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/bot1.webp" alt="Camisa Botafogo" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Botafogo</p>
+            <p class="text-sm text-gray-800">Camisa Botafogo Ed. Especial modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Botafogo" data-name="Camisa Botafogo" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 11-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/bra1.jpg" alt="Camisa Seleção Brasileira Ed. Especial" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Seleção Brasileira Ed. Especial</p>
+            <p class="text-sm text-gray-800">Camisa Seleção Brasileiroa Ed. Especial modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Seleção Brasileira Ed. Especial" data-name="Camisa Seleção Brasileira Ed. Especial" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 12-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/corin1.jpg" alt="Camisa Corinthians" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Corinthians</p>
+            <p class="text-sm text-gray-800">Camisa principal Corinthians modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Corinthians" data-name="Camisa Corinthians" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+        
+        <!--Produto 13-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/corin3.jpg" alt="Camisa Corinthians 3" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Corinthians 2</p>
+            <p class="text-sm text-gray-800">Camisa visitante Corinthians modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Corinthians 3" data-name="Camisa Corinthians 3" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 14-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/corin2.jpg" alt="Camisa Corinthians 2" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Corinthians 3</p>
+            <p class="text-sm text-gray-800">Camisa 3 Corinthians modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Corinthians 2" data-name="Camisa Corinthians 2" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 15-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/palm1.jpg" alt="Camisa Corinthians 2" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Corinthians</p>
+            <p class="text-sm text-gray-800">Camisa Corinthians Ed. Especial modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Corinthians 2" data-name="Camisa Corinthians 2" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        
+        <!--Produto 16-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/cru1.webp" alt="Camisa Cruzeiro" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Cruzeiro</p>
+            <p class="text-sm text-gray-800">Camisa principal Cruzeiro modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Cruzeiro" data-name="Camisa Cruzeiro" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 17-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/fla1.jpg" alt="Camisa Flamengo" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Flamengo</p>
+            <p class="text-sm text-gray-800">Camisa principal Flamengo modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Flamengo" data-name="Camisa Flamengo" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 18-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/flu1.jpg" alt="Camisa Fluminense" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Fluminense</p>
+            <p class="text-sm text-gray-800">Camisa principal Fluminense modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Fluminense" data-name="Camisa Fluminense" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 19-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/intermiami1.jpg" alt="Camisa Inter Miami 1" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Inter Miami 1</p>
+            <p class="text-sm text-gray-800">Camisa principal Inter Miami modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Inter Miami 1" data-name="Camisa Inter Miami 1" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 20-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/intermiami2.jpg" alt="Camisa Inter Miami 2" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Inter Miami 2</p>
+            <p class="text-sm text-gray-800">Camisa visitante Inter Miami modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Inter Miami 2" data-name="Camisa Inter Miami 2" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 21-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/intermilao1.webp" alt="Camisa Inter de Milão" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Inter de Milão</p>
+            <p class="text-sm text-gray-800">Camisa principal Inter de Milão modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Inter de Milão" data-name="Camisa Inter de Milão" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 22-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/lyon1.webp" alt="Camisa Lyon" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Lyon</p>
+            <p class="text-sm text-gray-800">Camisa visitante Lyon modelo torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Lyon" data-name="Camisa Lyon" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 23-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/manc1.jpg" alt="Camisa Manchester City" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Manchester City</p>
+            <p class="text-sm text-gray-800">Camisa principal Manchester City modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Manchester City" data-name="Camisa Manchester City" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 24-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/napoli1.jpg" alt="Camisa Napoli" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Napoli</p>
+            <p class="text-sm text-gray-800">Camisa principal Napoli modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Napoli" data-name="Camisa Napoli" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 25-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/palm2.jpg" alt="Camisa Palmeiras" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Palmeiras</p>
+            <p class="text-sm text-gray-800">Camisa principal Palmeiras modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Palmeiras" data-name="Camisa Palmeiras" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+        
+        <!--Produto 26-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/rm1.jpg" alt="Camisa Real Madrid" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Real Madrid</p>
+            <p class="text-sm text-gray-800">Camisa principal Real Madrid modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Real Madrid" data-name="Camisa Real Madrid" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 27-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/sp2.jpg" alt="Camisa São Paulo" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">São Paulo</p>
+            <p class="text-sm text-gray-800">Camisa principal São Paulo modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa São Paulo" data-name="Camisa São Paulo" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 28-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/sp1.jpg" alt="Camisa São Paulo 2" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">São Paulo 2</p>
+            <p class="text-sm text-gray-800">Camisa visitante São Paulo modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa São Paulo 2" data-name="Camisa São Paulo 2" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 29-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/sporting2.jpg" alt="Camisa Sporting" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Sporting CR7</p>
+            <p class="text-sm text-gray-800">Camisa Sporting Edição Especial Cr7 modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Sporting" data-name="Camisa Sporting" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 30-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/sporting1.jpg" alt="Camisa Sporting 2" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Sporting</p>
+            <p class="text-sm text-gray-800">Camisa Sporting Ed. Especial modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Sporting 2" data-name="Camisa Sporting 2" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 31-->
+        <div class="flex gap-2">
+          <img src="./assets/torcedor/vg1.jpg" alt="Camisa Vasco da Gama" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Vasco da Gama</p>
+            <p class="text-sm text-gray-800">Camisa principal Vasco da Gama modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Vasco da Gama" data-name="Camisa Vasco da Gama" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 32-->
+        <div class="flex gap-2">
+          <img src="./assets/jogador/vasco3.jpg" alt="Camisa Vasco da Gama 3" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Vasco da Gama</p>
+            <p class="text-sm text-gray-800">Camisa III Vasco da Gama modelo Torcedor.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€30.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Vasco da Gama 3" data-name="Camisa Vasco da Gama 3" data-price="30.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+      </main>
+  
+      <div class="mx-auto max-w-7xl my-2">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-900 uppercase mt-9 mb-6" id="Jogador">
+          Camisa Jogador
+        </h2>
+      </div>
+
+
+      <!--Grid Jogador-->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+        <div class="flex gap-2">
+          <img src="./assets/jogador/arg-jogador1.jpg" alt="Camisa Uruguai Jogador" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Uruguai</p>
+            <p class="text-sm text-gray-800">Camisa principal Uruguai modelo Jogador.</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 40.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Uruguai Jogador" data-name="Camisa Uruguai Jogador" data-price="40.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="flex gap-2">
+          <img src="./assets/jogador/ars-jogador1.jpg" alt="Camisa Arsenal Jogador" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Arsenal</p>
+            <p class="text-sm text-gray-800">Camisa principal Arsenal modelo Jogador.</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 40.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Arsenal Jogador" data-name="Camisa Arsenal Jogador" data-price="40.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/jogador/atlmad-jogador1.jpg" alt="Camisa Atlético Madrid Jogador" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Atlético Madrid</p>
+            <p class="text-sm text-gray-800">Camisa Atlético Madrid Ed. Especial modelo Jogador.</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 40.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Atlético Madrid Jogador" data-name="Camisa Atlético Madrid Jogador" data-price="40.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/jogador/barc-jogador1.jpeg" alt="Camisa Barcelona Jogador" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Barcelona</p>
+            <p class="text-sm text-gray-800">Camisa principal Barcelona modelo Jogador.</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 40.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Barcelona Jogador" data-name="Camisa Barcelona Jogador" data-price="40.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/jogador/benf-jogador1.jpg" alt="Camisa Benfica Jogador" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Benfica</p>
+            <p class="text-sm text-gray-800">Camisa principal Benfica modelo Jogador.</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 40.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Benfica Jogador" data-name="Camisa Benfica Jogador" data-price="40.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/jogador/corin-jogador1.jpg" alt="Camisa Corinthians Jogador" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Corinthians 3</p>
+            <p class="text-sm text-gray-800">Camisa Corinthians número 3 modelo Jogador.</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 40.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Corinthians Jogador" data-name="Camisa Corinthians Jogador" data-price="40.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/jogador/esp-jogador1.jpg" alt="Camisa Espanha Jogador" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Espanha</p>
+            <p class="text-sm text-gray-800">Camisa principal Espanha modelo Jogador.</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 40.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Espanha Jogador" data-name="Camisa Espanha Jogador" data-price="40.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/jogador/fla-jogador1.jpg" alt="Camisa Flamengo Jogador" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Flamengo</p>
+            <p class="text-sm text-gray-800">Camisa principal Flamengo modelo Jogador.</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 40.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Flamengo Jogador" data-name="Camisa Flamengo Jogador" data-price="40.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/jogador/fran-jogador1.jpg" alt="Camisa França Jogador" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">França</p>
+            <p class="text-sm text-gray-800">Camisa principal França modelo Jogador.</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 40.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa França Jogador" data-name="Camisa França Jogador" data-price="40.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/jogador/hol-jogador1.jpeg" alt="Camisa Holanda Jogador" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Holanda</p>
+            <p class="text-sm text-gray-800">Camisa principal Holanda modelo Jogador.</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 40.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Holanda Jogador" data-name="Camisa Holanda Jogador" data-price="40.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/jogador/intermilao-jogador1.jpg" alt="Camisa Inter de Milão Jogador" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Inter de Milão</p>
+            <p class="text-sm text-gray-800">Camisa principal Inter de Milão modelo Jogador.</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 40.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Inter de Milão Jogador" data-name="Camisa Inter de Milão Jogador" data-price="40.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/jogador/milan-jogador1.jpg" alt="Camisa Milan Jogador" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Milan</p>
+            <p class="text-sm text-gray-800">Camisa principal Milan modelo Jogador.</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 40.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Milan Jogador" data-name="Camisa Milan Jogador" data-price="40.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/jogador/napoli-jogador1.jpg" alt="Camisa Napoli Jogador" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Napoli</p>
+            <p class="text-sm text-gray-800">Camisa principal Napoli modelo Jogador.</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 40.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Napoli Jogador" data-name="Camisa Napoli Jogador" data-price="40.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/jogador/jogador-corin.jpg" alt="Camisa treino Corinthians Jogador" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Corinthians </p>
+            <p class="text-sm text-gray-800">Camisa treino Corinthians modelo Jogador.</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 40.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa treino Corinthians Jogador" data-name="Camisa treino Corinthians Jogador" data-price="40.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/jogador/port-jogador2.jpeg" alt="Camisa Portugal Jogador" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Portugal</p>
+            <p class="text-sm text-gray-800">Camisa principal Portugal modelo Jogador.</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 40.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Portugal Jogador" data-name="Camisa Portugal Jogador" data-price="40.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/jogador/port-jogador1.jpg" alt="Camisa Portugal 2 Jogador" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Portugal 2</p>
+            <p class="text-sm text-gray-800">Camisa visitante Portugal modelo Jogador.</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 40.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Portugal 2 Jogador" data-name="Camisa Portugal 2 Jogador" data-price="40.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/jogador/psg-jogador1.png" alt="Camisa PSG Jogador" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">PSG</p>
+            <p class="text-sm text-gray-800">Camisa principal PSG modelo Jogador.</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 40.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa PSG Jogador" data-name="Camisa PSG Jogador" data-price="40.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/jogador/rm-jogador1.jpg" alt="Camisa Real Madrid Jogador" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Real Madrid</p>
+            <p class="text-sm text-gray-800">Camisa principal Real Madrid modelo Jogador.</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 40.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Camisa Real Madrid Jogador" data-name="Camisa Real Madrid Jogador" data-price="40.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="mx-auto max-w-7xl my-2">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-900 uppercase mt-9 mb-6" id="Baby">
+          Babys
+        </h2>
+      </div>
+
+      <!--Grid Babys-->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+        <div class="flex gap-2">
+          <img src="./assets/baby/brasil.jpg" alt="Baby Brasil" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Brasil</p>
+            <p class="text-sm text-gray-800">Body Baby Torcedor Principal Seleção Brasileira</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 28.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="unico">Único</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Baby Brasil" data-name="Baby Brasil" data-price="28.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/baby/portugal1.jpg" alt="Baby Portugal" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Portugal</p>
+            <p class="text-sm text-gray-800">Body Baby Torcedor Principal Seleção Portuguesa</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 28.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="unico">Único</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Baby Portugal" data-name="Baby Portugal" data-price="28.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/baby/portugal.jpg" alt="Baby Portugal 2" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Portugal 2</p>
+            <p class="text-sm text-gray-800">Body Baby Torcedor Visitante Seleção Portuguesa</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 28.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="unico">Único</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Baby Portugal 2" data-name="Baby Portugal 2" data-price="28.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/baby/alemanha.jpg" alt="Baby Alemanha" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Alemanha</p>
+            <p class="text-sm text-gray-800">Body Baby Torcedor Principal Seleção Alemã</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 28.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="unico">Único</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Baby Alemanha" data-name="Baby Alemanha" data-price="28.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/baby/argentina.jpg" alt="Baby Argentina" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Argentina</p>
+            <p class="text-sm text-gray-800">Body Baby Torcedor Principal Seleção Argentina</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 28.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="unico">Único</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Baby Argentina" data-name="Baby Argentina" data-price="28.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/baby/franca.jpg" alt="Baby França" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">França</p>
+            <p class="text-sm text-gray-800">Body Baby Torcedor Principal Seleção Francesa</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 28.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="unico">Único</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Baby França" data-name="Baby França" data-price="28.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/baby/italia.jpg" alt="Baby Italia" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Italia</p>
+            <p class="text-sm text-gray-800">Body Baby Torcedor Principal Seleção Italiana</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 28.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="unico">Único</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Baby Italia" data-name="Baby Italia" data-price="28.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/baby/mexico.jpg" alt="Baby Mexico" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Mexico</p>
+            <p class="text-sm text-gray-800">Body Baby Torcedor Principal Seleção Mexicana</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 28.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="unico">Único</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Baby Mexico" data-name="Baby Mexico" data-price="28.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/baby/realmadrid.jpg" alt="Baby Real Madrid" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Real Madrid</p>
+            <p class="text-sm text-gray-800">Body Baby Torcedor Principal Real Madrid</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 28.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="unico">Único</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Baby Real Madrid" data-name="Baby Real Madrid" data-price="28.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/baby/barcelona.jpg" alt="Baby Barcelona" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Barcelona</p>
+            <p class="text-sm text-gray-800">Body Baby Torcedor Principal Barcelona</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 28.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="unico">Único</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Baby Barcelona" data-name="Baby Barcelona" data-price="28.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/baby/psg.jpg" alt="Baby PSG" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">PSG</p>
+            <p class="text-sm text-gray-800">Body Baby Torcedor Principal Paris Saint-Germain</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 28.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="unico">Único</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Baby PSG" data-name="Baby PSG" data-price="28.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/baby/intermiami.jpg" alt="Baby Inter Miami" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Inter Miami</p>
+            <p class="text-sm text-gray-800">Body Baby Torcedor Principal Inter Miami</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 28.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="unico">Único</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Baby Inter Miami" data-name="Baby Inter Miami" data-price="28.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/baby/intermiami2.jpg" alt="Baby Inter Miami 2" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Inter Miami </p>
+            <p class="text-sm text-gray-800">Body Baby Torcedor Visitante Inter Miami 2</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 28.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="unico">Único</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Baby Inter Miami 2" data-name="Baby Inter Miami 2" data-price="28.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/baby/alnasser.jpg" alt="Baby Al-Nassr" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Al-Nassr</p>
+            <p class="text-sm text-gray-800">Body Baby Torcedor Principal Al-Nassr</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 28.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="unico">Único</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Baby Al-Nassr" data-name="Baby Al-Nassr" data-price="28.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="./assets/baby/colocolo.jpg" alt="Baby Colo-Colo" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Colo-Colo</p>
+            <p class="text-sm text-gray-800">Body Baby Torcedor Principal Colo-Colo</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€ 28.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="unico">Único</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Baby Colo-Colo" data-name="Baby Colo-Colo" data-price="28.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" value="#about" class="w-44 flex rounded-2xl px-3 py-1 bg-gray-500 text-white text-center mx-auto mb-3">Voltar ao topo <i class="fa-solid fa-arrow-up pl-3 pt-1"></i></a>   
+    </div>  
+  </div>
+    
+    <!--Serviços-->
+    <div id="services" class="page-menu hidden">
+      
+      <!-- Menu de seleção -->
+      <div class="flex items-end flex-col gap-0 mt-1 mr-2">
+        <select id="model" class="w-30 text-center border-r-2" onchange="location.href=this.value;">
+          <option value="#services" href="#services">Casacos</option>
+          <option value="#KitTorcedor" href="#KitTorcedor">Kit Torcedor</option>
+        </select>
+      </div>
+
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-800 uppercase text-center mt-9 mb-6 border-b-2" >
+        Casacos
+      </h2>
+  
+      <!--Inicio menu-->
+      <div class="menu">
+  
+        <main class="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+        
+          <!--Produto 1-->
+          <div class="flex gap-2">
+            <img src="./assets/casaco/adidas-vermelho-75.jpg" alt="Casaco Adidas Vermelho" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Adidas</p>
+              <p class="text-sm text-gray-800">Casaco Adidas Vermelho</p>
+          
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€75.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Casaco Adidas Vermelho" data-name="Casaco Adidas Vermelho" data-price="28.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Fim produto-->
+    
+          <!--Produto 2-->
+          <div class="flex gap-2">
+            <img src="./assets/casaco/fla-preto.jpg" alt="Casaco Flamengo Preto" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Flamengo</p>
+              <p class="text-sm text-gray-800">Casaco Flamengo Preto.</p>
+          
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€80.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" 
+                  aria-label="Casaco Flamengo Preto" 
+                  data-name="Casaco Flamengo Preto" 
+                  data-price="80.00">
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Fim produto-->
+    
+          <!--Produto 3-->
+          <div class="flex gap-2">
+            <img src="./assets/casaco/brasil.jpg" alt="Casaco Brasil Amarelo e Cinza" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Brasil</p>
+              <p class="text-sm text-gray-800">Casaco Brasil Amarelo e Cinza.</p>
+    
+                <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€80.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Casaco Brasil Amarelo e Cinza" data-name="Casaco Brasil Amarelo e Cinza" data-price="80.00">
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Fim produto-->
+    
+          <!--Produto 4-->
+          <div class="flex gap-2">
+            <img src="./assets/casaco/cortavento-corinthians.jpg" alt="Casaco Corinthians Preto" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Corinthians</p>
+              <p class="text-sm text-gray-800">Casaco Corinthians Preto.</p>
+              
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€80.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Casaco Corinthians Preto" data-name="Casaco Corinthians Preto" data-price="80.00">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Fim produto-->
+        
+          <!--Produto 5-->
+          <div class="flex gap-2">
+            <img src="./assets/casaco/cortavento-barca-azul.jpg" alt="Casaco Barcelona Azul" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Barcelona</p>
+              <p class="text-sm text-gray-800">Casaco Barcelona Azul</p>
+    
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€80.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Casaco Barcelona Azul" data-name="Casaco Barcelona Azul" data-price="80.00">
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Fim produto-->
+    
+          <!--Produto 6-->
+          <div class="flex gap-2">
+            <img src="./assets/casaco/cortavento-barca-azulazul.jpg" alt="Casaco Barcelona Azul" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Barcelona</p>
+              <p class="text-sm text-gray-800">Casaco Barcelona Azul.</p>
+    
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€80.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Casaco Barcelona Azul" data-name="Casaco Barcelona Azul" data-price="80.00" >
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Fim produto-->
+  
+          <!--Produto 7-->
+          <div class="flex gap-2">
+            <img src="./assets/casaco/fla-pretovermelho.jpg" alt="Casaco Flamengo Preto e Vermelho" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Flamengo</p>
+              <p class="text-sm text-gray-800">Casaco Flamengo Preto.</p>
+    
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€80.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Casaco Flamengo Preto e Vermelho" data-name="Casaco Flamengo Preto e Vermelho" data-price="80.00" >
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Fim produto-->
+  
+          <!--Produto 8-->
+          <div class="flex gap-2">
+            <img src="./assets/casaco/fla-pretovermelhobranco.jpg" alt="Casaco Flamengo Preto e Branco" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Flamengo</p>
+              <p class="text-sm text-gray-800">Casaco Flamengo Preto e Branco.</p>
+    
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€80.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Casaco Flamengo Preto e Branco" data-name="Casaco Flamengo Preto e Branco" data-price="80.00" >
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Fim produto-->
+  
+          <!--Produto 9-->
+          <div class="flex gap-2">
+            <img src="./assets/casaco/fla-preto.jpg" alt="Casaco Flamengo Preto" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Flamengo</p>
+              <p class="text-sm text-gray-800">Casaco Flamengo Preto.</p>
+    
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€80.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Casaco Flamengo Preto" data-name="Casaco Flamengo Preto" data-price="80.00" >
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Fim produto-->
+  
+          <!--Produto 10-->
+          <div class="flex gap-2">
+            <img src="./assets/casaco/liverpool-85.jpg" alt="Casaco Liverpool Preto" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Liverpool</p>
+              <p class="text-sm text-gray-800">Casaco Liverpool Preto.</p>
+    
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€80.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Casaco Liverpool Preto" data-name="Casaco Liverpool Preto" data-price="80.00" >
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Fim produto-->
+  
+          <!--Produto 11-->
+          <div class="flex gap-2">
+            <img src="./assets/casaco/barca-preto...jpg" alt="Jaqueta Barcelona Preto e Dourado" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Barcelona</p>
+              <p class="text-sm text-gray-800">Jaqueta Barcelona Preto.</p>
+    
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€80.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Jaqueta Barcelona Preto e Dourado" data-name="Jaqueta Barcelona Preto e Dourado" data-price="80.00" >
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Fim produto-->
+  
+          <!--Produto 12-->
+          <div class="flex gap-2">
+            <img src="./assets/casaco/barca-vermelho.jpg" alt="Jaqueta Barcelona Vermelho" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Barcelona</p>
+              <p class="text-sm text-gray-800">Jaqueta Barcelona Vermelho.</p>
+    
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€80.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Jaqueta Barcelona Vermelho" data-name="Jaqueta Barcelona Vermelho" data-price="80.00" >
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Fim produto-->
+          
+          <!--Produto 13-->
+          <div class="flex gap-2">
+            <img src="./assets/casaco/milan-preto.jpg" alt="Jaqueta Milan Preto" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Milan</p>
+              <p class="text-sm text-gray-800">Jaqueta Milan Preto.</p>
+    
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€80.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Jaqueta Milan Preto" data-name="Jaqueta Milan Preto" data-price="80.00" >
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Fim produto-->
+  
+          <!--Produto 14-->
+          <div class="flex gap-2">
+            <img src="./assets/casaco/santos-preto.jpg" alt="Jaqueta Santos" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Santos</p>
+              <p class="text-sm text-gray-800">Jaqueta Santos Preta.</p>
+    
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€80.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Jaqueta Santos" data-name="Jaqueta Santos" data-price="80.00" >
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Fim produto-->
+  
+          <!--Produto 15-->
+          <div class="flex gap-2">
+            <img src="./assets/casaco/fla-inverno-preto.jpg" alt="Jaqueta Flamengo Preto" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Flamengo</p>
+              <p class="text-sm text-gray-800">Jaqueta Flamengo Preto.</p>
+              
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€80.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Jaqueta Flamengo Preto" data-name="Jaqueta Flamengo Preto" data-price="80.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+
+        <!--Produto 16-->
+        <div class="flex gap-2">
+          <img src="./assets/casaco/fla-preto-longo.jpg" alt="Jaqueta Flamengo Longo Preto" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+          <div>
+            <p class="font-bold text-gray-900">Flamengo Longo</p>
+            <p class="text-sm text-gray-800">Jaqueta Flamengo Longo Preto.</p>  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-gray-900 text-lg">€80.00</p>
+              <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Jaqueta Flamengo Longo Preto" data-name="Jaqueta Flamengo Longo Preto" data-price="80.00" >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Fim produto-->
+        
+        <!--Produto 17-->
+        <div class="flex gap-2">
+            <img src="./assets/casaco/sp-inverno-preto.jpg" alt="Jaqueta São Paulo Preto" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">São Paulo</p>
+              <p class="text-sm text-gray-800">Jaqueta São Paulo Preto.</p>
+    
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€80.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Jaqueta São Paulo Preto" data-name="Jaqueta São Paulo Preto" data-price="80.00" >
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Fim produto-->
+  
+          <!--Produto 18-->
+          <div class="flex gap-2">
+            <img src="./assets/casaco/barca-preto-escudo.jpg" alt="Jaqueta Barcelona Preto" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Barcelona</p>
+              <p class="text-sm text-gray-800">Jaqueta Barcelona Preto.</p>
+    
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€80.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Jaqueta Barcelona Preto" data-name="Jaqueta Barcelona Preto" data-price="80.00" >
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Fim produto-->
+
+          <!--Produto 19-->
+          <div class="flex gap-2">
+            <img src="./assets/casaco/palmeiras-azulclaro.jpg" alt="Jaqueta Palmeiras Preto" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Palmeiras</p>
+              <p class="text-sm text-gray-800">Jaqueta Palmeiras Preto.</p>
+    
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€80.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Jaqueta Palmeiras Preto" data-name="Jaqueta Palmeiras Preto" data-price="80.00" >
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Fim produto-->
+        </main>
+        
+        <div class="mx-auto max-w-7xl my-2" id="KitTorcedor">
+          <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-900 uppercase mt-9 mb-6">
+            Kit Esportivo
+          </h2>
+        </div>
+  
+  
+        <!--Grid Jogador-->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+          <div class="flex gap-2">
+            <img src="./assets/casaco/kit-adidas-preto.jpg" alt="Kit Adidas Preto e Branco" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Adidas</p>
+              <p class="text-sm text-gray-800">Kit Adidas Preto e Branco.</p>
+    
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€90.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Kit Adidas Preto e Branco" data-name="Kit Adidas Preto e Branco" data-price="90.00">
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+    
+          <div class="flex gap-2">
+            <img src="./assets/casaco/kit-adidas-preto2.jpg" alt="Kit Adidas Preto" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Adidas</p>
+              <p class="text-sm text-gray-800">Kit Adidas Preto.</p>
+              
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€90.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Kit Adidas Preto" data-name="Kit Adidas Preto" data-price="90.00">
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+  
+          <div class="flex gap-2">
+            <img src="./assets/casaco/kit-adidas-pretoceinza.jpg" alt="Kit Adidas Preto e Cinza" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Adidas</p>
+              <p class="text-sm text-gray-800">Kit Adidas Preto e Cinza.</p>
+              
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€90.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Kit Adidas Preto e Cinza" data-name="Kit Adidas Preto e Cinza" data-price="90.00">
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+  
+          <div class="flex gap-2">
+            <img src="./assets/casaco/kit-nike-pretobranco.jpg" alt="Kit Nike Preto e Branco" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Nike</p>
+              <p class="text-sm text-gray-800">Kit Nike Preto e Branco.</p>
+              
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€90.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Kit Nike Preto e Branco" data-name="Kit Nike Preto e Branco" data-price="90.00">
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+  
+          <div class="flex gap-2">
+            <img src="./assets/casaco/kit-nike-azulbranco..jpg" alt="Kit Nike Azul e Branco" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Nike</p>
+              <p class="text-sm text-gray-800">Kit Nike Azul e Branco.</p>
+              
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€90.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Kit Nike Azul e Branco" data-name="Kit Nike Azul e Branco" data-price="90.00">
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+  
+          <div class="flex gap-2">
+            <img src="./assets/casaco/kit-nike-brancoverde.jpg" alt="Kit Nike Verde e Branco" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Nike</p>
+              <p class="text-sm text-gray-800">Kit Nike Verde e Branco.</p>
+              
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€90.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Kit Nike Verde e Branco" data-name="Kit Nike Verde e Branco" data-price="90.00">
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+  
+          <div class="flex gap-2">
+            <img src="./assets/casaco/kit-nike-listrabranco.jpg" alt="Kit Nike Preto com Listra Branca" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Nike</p>
+              <p class="text-sm text-gray-800">Kit Nike Preto com Listra Branca.</p>
+              
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€90.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Kit Nike Preto com Listra Branca" data-name="Kit Nike Preto com Listra Branca" data-price="90.00">
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+  
+          <div class="flex gap-2">
+            <img src="./assets/casaco/kit-nike-azullistra.jpg" alt="Kit Nike Azul com Listra Branca" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Nike</p>
+              <p class="text-sm text-gray-800">Kit Nike Azul com Listra Branca.</p>
+              
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€90.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Kit Nike Azul com Listra Branca" data-name="Kit Nike Azul com Listra Branca" data-price="90.00">
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+  
+          <div class="flex gap-2">
+            <img src="./assets/casaco/kit-puma-preto.jpg" alt="Kit Puma Preto e Cinza" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Puma</p>
+              <p class="text-sm text-gray-800">Kit Puma Preto e Cinza.</p>
+              
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€90.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Kit Puma Preto e Cinza" data-name="Kit Puma Preto e Cinza" data-price="90.00">
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+  
+          <div class="flex gap-2">
+            <img src="./assets/casaco/kit-puma-brancopreto.jpg" alt="Kit Puma Preto e Branco" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+            <div>
+              <p class="font-bold text-gray-900">Puma</p>
+              <p class="text-sm text-gray-800">Kit Puma Preto e Branco.</p>
+              
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-gray-900 text-lg">€90.00</p>
+                <select name="size" class="size" required>
+                  <option value="" disabled selected>Tamanho</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="2XL">2XL</option>
+                  <option value="3XL">3XL</option>
+                </select>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn active:scale-x-110 active:-rotate-2 duration-300" aria-label="Kit Puma Preto e Branco" data-name="Kit Puma Preto e Branco" data-price="90.00">
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#services" value="#services" class="w-44 flex rounded-2xl px-3 py-1 bg-gray-500 text-white text-center mx-auto mb-3">Voltar ao topo <i class="fa-solid fa-arrow-up pl-3 pt-1"></i></a>   
+    </div>
+
+          <!-- Inicio info -->
+      <!--Sobre -->
+      <div class=" page-menu hidden"  id="info">
+        <h2 class="text-xl xl:text-3xl md:text-2xl font-bold text-gray-800 text-center mt-9 border-b-2 uppercase">Mais informações</h2>
+        <div class="grid grid-cols-1 md:grid-cols-1 gap-7 md:gap-10 max-w-7xl mx-3 xl:mx-auto mt-4 pb-10 ">
+          <p class="text-lg xl:text-2xl font-light text-gray-800 px-2 text-center">Entre em contato através do: </p>
+          
+          <div class="flex gap-4 flex-col justify-center text-center">
+            
+            <a href="https://www.facebook.com/share/vjwUMe4Bby5gzRET/?mibextid=LQQJ4d" aria-label="facebook" rel="noopener" target="_blank" class="text-2xl pb-8"><i class="fa-brands fa-facebook fa-lg text-blue-700"></i> Facebook</a>
+            
+            <a href="https://www.instagram.com/perrucci_sports/" aria-label="instagram" rel="noopener" target="_blank" class="text-2xl pb-8"><i class="fa-brands fa-instagram fa-lg  text-pink-600"></i> Instagram</a>
+            
+            <a href="https://wa.me/351932036616" aria-label="whatsapp" rel="noopener" target="_blank" class="text-2xl"><i class="fa-brands fa-whatsapp fa-lg text-green-400"></i> WhatsApp</a>
+          </div>
+          
+        </div>
+              
+      </div>
+        <!-- Fim info -->
+
+
+    <!--Modal Cart-->
+    <!--Modal Cart-->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[9999999] items-center justify-center hidden" id="cart-modal">
+      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]" id="address">
+        <h2 class="text-center font-bold text-2xl mb-5">Meu carrinho</h2>
+
+        <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+        <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+        <p class="font-bold mt-4">Agendamento</p>
+        <p class="font-medium mt-4">Dia</p>
+        <input 
+        type="date" 
+        placeholder="data do agendamento" 
+        class="w-full border-2 p-1 rounded my-1" 
+        id="date-scheduling">
+
+        <p class="font-medium mt-2">Hora</p>
+        <input 
+        type="time" 
+        placeholder="data do agendamento" 
+        class="w-full border-2 p-1 rounded my-1" 
+        id="time-scheduling">
+        <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo</p>
+
+        <div class="flex items-center justify-between mt-5 w-full">
+          <button id="close-modal-btn" >Fechar</button>
+          <button id="checkout-btn" class="bg-green-500 hover:bg-green-700 transition-all hover:transition text-white px-4 py-1 rounded" >Finalizar pedido</button>
+        </div>
+      </div>
+    </div>
+    <!--Fim Modal Cart-->
+    </div>
+  </div>
+
+  <div class="pb-8 items-center text-center bg-stone-700 text-gray-300 text-xs">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center text-gray-300 h-18 justify-center">
+      
+      <div class="grid items-center justify-center gap-4 mb-2">
+      
+        <h2 class="mt-4">Siga-nos</h2>
+        
+          <div class="flex gap-4">
+
+            <a href="https://www.facebook.com/share/vjwUMe4Bby5gzRET/?mibextid=LQQJ4d" aria-label="facebook" rel="noopener" target="_blank"><i class="fa-brands fa-facebook fa-2xl text-blue-700"></i></a>
+              
+            <a href="https://www.instagram.com/perrucci_sports/" aria-label="instagram" rel="noopener" target="_blank"><i class="fa-brands fa-instagram fa-2xl text-pink-600"></i></a>
+              
+            <a href="https://wa.me/351932036616" aria-label="whatsapp" rel="noopener" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl text-green-400"></i></a>
+      </div>
+    </div>
+    
+    <div class="grid items-center justify-center gap-4 mb-2">
+    
+      <h2 class="mt-4">Aceitamos</h2>
+      
+        <div class="flex gap-4">
+
+          <p><i class="fa-solid fa-money-bill-1-wave fa-xl text-green-400"></i></p>
+          
+          <p><i class="fa-regular fa-credit-card fa-xl text-white"></i></p>
+          
+          <p><i class="fa-brands fa-pix fa-xl text-teal-300"></i> PIX</p>
+        </div>
+    </div>
+</div>
+
+  <div class=" text-center text-gray-300 h-2 mt-4 mb-12 md:mb-2 2xl:mb-8 justify-center border-gray-600 border-t-2">
+        <p class="copyright pt-3 pb-10 md:pb-0"> Julioctenorio © 2024</p>
+  </div>
+          
+          
+  <!--Button Cart Footer-->
+  <footer class="2xl:w-full w-20 rounded-full 2xl:rounded-none bg-red-500 text-center py-2 fixed z-40 flex items-center justify-center bottom-14 right-1 2xl:bottom-0 2xl:right-0">
+    <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+      (<span id="cart-count">0</span>)
+      <p class="hidden 2xl:flex">Veja meu carrinho</p>
+      <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+  </footer>
+<!--Fim Button Cart Footer-->
+  
+<script>
+  let currentIndex = 0;
+
+  function scrollCarousel(direction) {
+    const carousel = document.getElementById("carousel");
+    const totalSlides = carousel.children.length;
+    currentIndex =
+      (currentIndex + direction + totalSlides) % totalSlides;
+    carousel.style.transform = `translateX(-${
+      currentIndex * 100
+    }%)`;
+  }
+</script>
+  </body>
+</html>
