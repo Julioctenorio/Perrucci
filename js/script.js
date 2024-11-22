@@ -8,16 +8,14 @@ const closeModalBtn = document.getElementById("close-modal-btn");
 const checkoutBtn = document.getElementById("checkout-btn");
 const dateSpan = document.getElementById("date-span");
 const addressInput = document.getElementById("address");
-const dateScheduling = document.getElementById("date-scheduling")
-const timeScheduling = document.getElementById("time-scheduling")
+const dateScheduling = document.getElementById("date-scheduling");
+const timeScheduling = document.getElementById("time-scheduling");
 const addressWarn = document.getElementById("address-warn");
-const nav = document.querySelectorAll('.nav-item')
-const size = document.getElementsByClassName('size').value
+const nav = document.querySelectorAll('.nav-item');
 
 let cart = [];
 
 // Menu
-// Função para exibir apenas a seção "Início"
 document.addEventListener("DOMContentLoaded", function () {
   const menuLinks = document.querySelectorAll('nav ul li a');
 
@@ -42,23 +40,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function mostrarSecao(id) {
-  // Seleciona todas as seções
   var secoes = document.querySelectorAll('.page-menu');
 
-  // Percorre todas as seções
   secoes.forEach(function (secao) {
-    // Verifica se o ID da seção é igual ao ID passado como argumento
     if (secao.id === id) {
-      // Se for igual, mostra a seção
       secao.classList.remove('hidden');
     } else {
-      // Caso contrário, oculta a seção
       secao.classList.add('hidden');
     }
   });
 }
-
-
 
 
 // Abrir o modal do carrinho
@@ -100,7 +91,6 @@ menu.addEventListener("click", function (event) {
     addToCart(name, price, size);
   }
 });
-
 
 
 // Função para adicionar no carrinho
@@ -165,7 +155,6 @@ function updateCartModal() {
 }
 
 // Função para remover item do carrinho
-
 cartItemsContainer.addEventListener('click', function (event) {
   if (event.target.classList.contains('remove-from-cart-btn')) {
     const name = event.target.getAttribute('data-name');
@@ -175,6 +164,22 @@ cartItemsContainer.addEventListener('click', function (event) {
   }
 });
 
+
+function removeCartItemCart(name, size) {
+  const index = cart.findIndex(item => item.name === name && item.size === size);
+
+  if (index !== -1) {
+    const item = cart[index];
+
+    if (item.quantity > 1) {
+      item.quantity -= 1; // Apenas reduz a quantidade
+    } else {
+      cart.splice(index, 1); // Remove completamente o item
+    }
+
+    updateCartModal();
+  }
+}
 
 function removeCartItemCart(name, size) {
   const index = cart.findIndex(item => item.name === name && item.size === size);
@@ -202,10 +207,6 @@ addressInput.addEventListener('input', function (event) {
 })
 
 
-
-
-
-
 // Finalizar pedido
 checkoutBtn.addEventListener('click', function () {
 
@@ -219,7 +220,7 @@ checkoutBtn.addEventListener('click', function () {
       position: "right", // `left`, `center` or `right`
       stopOnFocus: true, // Prevents dismissing of toast on hover
       style: {
-      background: "#ef4444",
+        background: "#ef4444",
       },
       onClick: function () { } // Callback after click
     }).showToast();
@@ -234,6 +235,7 @@ checkoutBtn.addEventListener('click', function () {
     addressInput.classList.add('border-red-500')
     return
   }
+
 
   const dateInput = document.querySelector('input[type="date"]');
   const timeInput = document.querySelector('input[type="time"]');
@@ -255,20 +257,20 @@ checkoutBtn.addEventListener('click', function () {
     return;
   }
 
-  // Função para calcular o total do carrinho
-  const calculateCartTotal = (cart) => {
-    return cart.reduce((total, item) => total + (item.price * item.quantity), 0);
-  };
+// Função para calcular o total do carrinho
+const calculateCartTotal = (cart) => {
+  return cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+};
 
-  // Calcula o total do carrinho
-  const cartTotal = calculateCartTotal(cart).toFixed(2);
+// Calcula o total do carrinho
+const cartTotal = calculateCartTotal(cart).toFixed(2);
 
-  // Construir a mensagem dos itens do carrinho
-  const cartItems = cart.map((item) => {
-    return (
-      `${item.name}\n Quantidade: (${item.quantity})\n Tamanho: ${item.size} Preço: R$${item.price} \n\n`
-    );
-  }).join('');
+// Construir a mensagem dos itens do carrinho
+const cartItems = cart.map((item) => {
+  return (
+    `${item.name}\n Quantidade: (${item.quantity})\n Tamanho: ${item.size} Preço: R$${item.price} \n\n`
+  );
+}).join('');
 
   // Mensagem completa
   const finalMessage =
@@ -282,7 +284,6 @@ checkoutBtn.addEventListener('click', function () {
 
   window.open(`https://wa.me/${phone}?text=${message}`, '_blank')
 
-
   cart.length = 0;
   updateCartModal();
 })
@@ -292,8 +293,7 @@ checkoutBtn.addEventListener('click', function () {
 function checkIsOpen() {
   const data = new Date();
   const hora = data.getHours();
-  return hora >= 10 && hora < 20;
-  //true = restaurante esta aberto
+  return hora >= 10 && hora < 22;
 }
 
 
@@ -311,14 +311,3 @@ if (isOpen) {
   spanItem.classList.add('border-red-500');
   spanItem.classList.add('text-red-500');
 }
-
-/*
-//carousel
-import {
-  Carousel,
-  initTWE,
-} from "tw-elements";
-
-initTWE({ Carousel });
-*/
-
