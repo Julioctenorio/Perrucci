@@ -131,7 +131,7 @@ function updateCartModal() {
           <p class="font-medium">${item.name}</p>  
           <p>Qtd: ${item.quantity}</p>
           <p>Tamanho: ${item.size}</p>
-          <p class="font-medium mt-2">R$ ${item.price.toFixed(2)}</p>
+          <p class="font-medium mt-2">€ ${item.price.toFixed(2)}</p>
         </div>
 
         <button class="remove-from-cart-btn" data-name="${item.name}" data-size="${item.size}">
@@ -257,35 +257,51 @@ checkoutBtn.addEventListener('click', function () {
     return;
   }
 
-// Função para calcular o total do carrinho
-const calculateCartTotal = (cart) => {
-  return cart.reduce((total, item) => total + (item.price * item.quantity), 0);
-};
+  // Função para calcular o total do carrinho
+  const calculateCartTotal = (cart) => {
+    return cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+  };
 
-// Calcula o total do carrinho
-const cartTotal = calculateCartTotal(cart).toFixed(2);
+  // Calcula o total do carrinho
+  const cartTotal = calculateCartTotal(cart).toFixed(2);
 
-// Construir a mensagem dos itens do carrinho
-const cartItems = cart.map((item) => {
-  return (
-    `${item.name}\n Quantidade: (${item.quantity})\n Tamanho: ${item.size} Preço: R$${item.price} \n\n`
-  );
-}).join('');
+  // Construir a mensagem dos itens do carrinho
+  const cartItems = cart.map((item) => {
+    return (
+      `${item.name}\n Quantidade: (${item.quantity})\n Tamanho: ${item.size} Preço: €${item.price} \n\n`
+    );
+  }).join('');
+
+  // Obtém os valores de data-name e data-price
+  const model = parentButton.getAttribute('data-name'); // Modelo
+  const price = parentButton.getAttribute('data-price'); // Preço
+
+  // Seleciona o tamanho
+  const sizeSelect = parentButton.parentElement.querySelector('.size');
+  const size = sizeSelect.value; // Tamanho selecionado
+
+  if (!size) {
+    alert('Por favor, selecione um tamanho antes de continuar.');
+    return;
+  }
 
   // Mensagem completa
   const finalMessage =
-    `>> NOVO AGENDAMENTO << \n` +
-    ` Data: ${date}\n Hora: (${time})\n\n` +
+    `>> NOVA ENCOMENDA << \n` +
+    `Modelo: ${model}\n` +
+    `Tamanho: ${size}\n` +
+    `Preço: R$${price}\n\n` +
     cartItems +
-    `Total: R$${cartTotal}`;
+    `Total: €${cartTotal}`;
 
   const message = encodeURIComponent(finalMessage);
-  const phone = '+351911777657'
+  const phone = '+351932036616';
 
-  window.open(`https://wa.me/${phone}?text=${message}`, '_blank')
+  window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
 
   cart.length = 0;
   updateCartModal();
+
 })
 
 
