@@ -3024,6 +3024,11 @@ footer .w-full {
   z-index: 40;
 }
 
+.body-fixed {
+  overflow: hidden;
+  height: 100vh;
+}
+
 /*cards do sobre*/
 
 .card{
@@ -3106,6 +3111,44 @@ footer .w-full {
 .card:hover .content p{
   opacity: 1;
   transform: translateY(0);
+}
+
+#cart-modal {
+  display: none;
+  /* Inicialmente oculto */
+  position: fixed;
+  top: 0;
+  /* Fixa o modal no topo */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Ocupa a altura total da tela */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fundo semi-transparente */
+  z-index: 100000;
+  /* Fixa acima de outros elementos */
+  overflow-y: auto;
+  /* Permite rolar se o conteúdo for maior que a altura */
+}
+
+#cart-modal .modal-content {
+  background-color: white;
+  margin: 20px auto;
+  /* Espaçamento do modal */
+  padding: 20px;
+  width: 90%;
+  /* Largura do modal */
+  max-width: 600px;
+  /* Largura máxima */
+  border-radius: 8px;
+  position: relative;
+  z-index: 1010;
+  /* Garante que o conteúdo esteja acima do fundo */
+}
+
+#cart-modal .modal-content button {
+  margin-top: auto;
+  /* Garante que o botão "Finalizar Carrinho" fique no final */
 }
 
 @media (min-width: 375px) {
