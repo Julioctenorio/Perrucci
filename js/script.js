@@ -146,7 +146,7 @@ function updateCartModal() {
         <div>
           <p class="font-medium">${item.name}</p>  
           <p>Quantidade: ${item.quantity}</p>
-          <p>Tamanho: ${item.size}</p>
+          <p>Tamanho: ${item.size}</p> \n
           <p class="font-medium mt-2">€${item.price.toFixed(2)}</p>
         </div>
 
@@ -238,7 +238,7 @@ checkoutBtn.addEventListener('click', function () {
     `Data: ${new Date().toLocaleString("pt-PT")}\n\n` +
     `Nome: ${nameScheduling} \n` +
     `Morada: ${addressInputValue}\n\n` +
-    cartItems +
+    cartItems + 
     `Total: €${cartTotalAmount}`;
 
   const message = encodeURIComponent(finalMessage);
