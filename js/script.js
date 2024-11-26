@@ -12,7 +12,8 @@ const dateSpan = document.getElementById("date-span");
 const addressInput = document.getElementById("address");
 const addressWarn = document.getElementById("address-warn");
 const nav = document.querySelectorAll(".nav-item");
-const nameScheduling = document.querySelector("input[name='nameScheduling']")
+const nameSchedulingInput = document.querySelector("#nameScheduling")
+const nameScheduling = nameSchedulingInput.value
 
 let cart = [];
 
