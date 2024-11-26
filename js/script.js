@@ -12,7 +12,7 @@ const dateSpan = document.getElementById("date-span");
 const addressInput = document.getElementById("address");
 const addressWarn = document.getElementById("address-warn");
 const nav = document.querySelectorAll(".nav-item");
-const nameScheduling = document.getElementById("name-scheduling").value
+const nameScheduling = document.querySelector("input[name='nameScheduling']")
 
 let cart = [];
 
@@ -114,7 +114,6 @@ function addToCart(name, price, size) {
   if (existingItem) {
     // Se o item já existe, apenas aumenta a quantidade
     existingItem.quantity += 1;
-    navigator.vibrate(200); // Vibração para feedback
   } else {
     // Caso contrário, adiciona o novo item ao carrinho
     cart.push({
@@ -237,9 +236,9 @@ checkoutBtn.addEventListener('click', function () {
   const finalMessage =
     `>> NOVA ENCOMENDA << \n` +
     `Data: ${new Date().toLocaleString("pt-PT")}\n\n` +
-    `Nome: ${nameScheduling} \n\n` +
+    `Nome: ${nameScheduling} \n` +
+    `Morada: ${addressInputValue}\n\n` +
     cartItems +
-    `Morada: ${addressInputValue}\n` +
     `Total: €${cartTotalAmount}`;
 
   const message = encodeURIComponent(finalMessage);
