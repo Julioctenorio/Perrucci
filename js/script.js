@@ -236,7 +236,7 @@ checkoutBtn.addEventListener('click', function () {
   const finalMessage =
     `>> NOVA ENCOMENDA << \n` +
     `Data: ${new Date().toLocaleString("pt-PT")}\n\n` +
-    `Nome: ${nameScheduling} \n` +
+    `Nome: ${nameScheduling.value} \n` +
     `Morada: ${addressInputValue}\n\n` +
     cartItems + 
     `Total: €${cartTotalAmount}`;
