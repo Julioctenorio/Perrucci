@@ -12,7 +12,7 @@ const dateSpan = document.getElementById("date-span");
 const addressInput = document.getElementById("address");
 const addressWarn = document.getElementById("address-warn");
 const nav = document.querySelectorAll(".nav-item");
-const nameScheduling = document.getElementById("nameScheduling").value.trim();
+const nameScheduling = document.getElementById("nameScheduling");
 
 let cart = [];
 
@@ -236,7 +236,7 @@ checkoutBtn.addEventListener('click', function () {
   const finalMessage =
     `>> NOVA ENCOMENDA << \n` +
     `Data: ${new Date().toLocaleString("pt-PT")}\n\n` +
-    `Nome: ${nameScheduling} \n` +
+    `Nome: ${nameScheduling.value} \n` +
     `Morada: ${addressInputValue}\n\n` +
     cartItems +
     `Total: €${cartTotalAmount}`;
