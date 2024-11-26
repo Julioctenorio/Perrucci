@@ -12,7 +12,7 @@ const dateSpan = document.getElementById("date-span");
 const addressInput = document.getElementById("address");
 const addressWarn = document.getElementById("address-warn");
 const nav = document.querySelectorAll(".nav-item");
-const nameScheduling = toString(document.getElementById("nameScheduling").value)
+const nameScheduling = document.querySelector("#nameScheduling").value.trim();
 
 let cart = [];
 
