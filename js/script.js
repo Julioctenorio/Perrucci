@@ -228,7 +228,7 @@ checkoutBtn.addEventListener('click', function () {
   // Itens do carrinho
   const cartItems = cart.map((item) => {
     return (
-      `${item.name}\n Quantidade: (${item.quantity})\n Tamanho: ${item.size} Preço: €${item.price} \n\n`
+      `${item.name}\n Quantidade: (${item.quantity})\n Tamanho: ${item.size}\n Preço: €${item.price} \n\n`
     );
   }).join('');  
 
@@ -238,7 +238,7 @@ checkoutBtn.addEventListener('click', function () {
     `Data: ${new Date().toLocaleString("pt-PT")}\n\n` +
     `Nome: ${nameScheduling} \n` +
     `Morada: ${addressInputValue}\n\n` +
-    cartItems +
+    cartItems + 
     `Total: €${cartTotalAmount}`;
 
   const message = encodeURIComponent(finalMessage);
