@@ -242,7 +242,7 @@ checkoutBtn.addEventListener('click', function () {
     `Total: €${cartTotalAmount}`;
 
   const message = encodeURIComponent(finalMessage);
-  const phone = '+351932036616';
+  const phone = '+351911777657';
 
   // Redireciona para o WhatsApp com a mensagem formatada
   window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
