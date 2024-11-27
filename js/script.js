@@ -77,7 +77,7 @@ function handleMenuClick(menu) {
     let parentButton = event.target.closest(".add-to-cart-btn");
 
     if (parentButton) {
-      const name = parentButton.getAttribute("data-name");
+      const name = parentButton.getAttribute("aria-label");
       const price = parseFloat(parentButton.getAttribute("data-price"));
 
       // Busca o <select> que está no mesmo nível do botão
@@ -150,7 +150,7 @@ function updateCartModal() {
           <p class="font-medium mt-2">€${item.price.toFixed(2)}</p>
         </div>
 
-        <button class="remove-from-cart-btn" data-name="${item.name}" data-size="${item.size}">
+        <button class="remove-from-cart-btn" arial-label="${item.name}" data-size="${item.size}">
           Remover
         </button>
       </div>
@@ -173,7 +173,7 @@ function updateCartModal() {
 // Função para remover item do carrinho
 cartItemsContainer.addEventListener("click", function (event) {
   if (event.target.classList.contains("remove-from-cart-btn")) {
-    const name = event.target.getAttribute("data-name");
+    const name = event.target.getAttribute("aria-label");
     const size = event.target.getAttribute("data-size"); // Captura o tamanho
 
     removeCartItemCart(name, size);

@@ -1019,6 +1019,22 @@ video {
   width: 100%;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
 .min-w-\[90\%\] {
   min-width: 90%;
 }
@@ -3022,6 +3038,14 @@ footer .w-full {
   position: fixed;
   bottom: 0;
   z-index: 40;
+}
+
+::-moz-placeholder {
+  font-style: italic;
+}
+
+::placeholder {
+  font-style: italic;
 }
 
 .body-fixed {

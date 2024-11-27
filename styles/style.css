@@ -30,6 +30,10 @@ footer .w-full {
   z-index: 40;
 }
 
+::placeholder {
+ font-style: italic;
+}
+
 .body-fixed {
   overflow: hidden;
   height: 100vh;
