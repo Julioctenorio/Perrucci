@@ -10,8 +10,12 @@ body {
   background-color: #f6f7f8;
 }
 
-header h1, .about-services p{
+.about-services p, .storeName{
   text-shadow: 2px 2px 5px red;
+}
+
+.storeNameOn{
+  text-shadow: 2px 2px 5px green;
 }
 
 footer {
@@ -30,9 +34,6 @@ footer .w-full {
   z-index: 40;
 }
 
-::placeholder {
- font-style: italic;
-}
 
 .body-fixed {
   overflow: hidden;
@@ -120,6 +121,8 @@ footer .w-full {
   transform: translateY(0);
 }
 
+
+
 #cart-modal {
   display: none; /* Inicialmente oculto */
   position: fixed;
@@ -137,8 +140,8 @@ footer .w-full {
   margin: 20px auto; /* Espaçamento do modal */
   padding: 20px;
   width: 90%; /* Largura do modal */
-  max-width: 600px; /* Largura máxima */
-  border-radius: 8px;
+  max-width: 17.5rem; /* Largura máxima */
+  border-radius: 0.5rem;
   position: relative;
   z-index: 1010; /* Garante que o conteúdo esteja acima do fundo */
 }
@@ -146,6 +149,22 @@ footer .w-full {
 #cart-modal .modal-content button {
   margin-top: auto; /* Garante que o botão "Finalizar Carrinho" fique no final */
 }
+
+::placeholder {
+ font-style: italic;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    text-align: center;
+}
+
 
 @media (min-width: 375px) {
   .card{
@@ -159,7 +178,7 @@ footer .w-full {
 }
 
 @media (min-width: 768px) {
-
+  
   .card{
     width: 21rem;
   }

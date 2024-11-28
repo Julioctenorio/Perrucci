@@ -40,7 +40,7 @@
           alt="Logo Perrucci Sports"
           class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200 mt-7"/>
 
-        <h1 class="text-4xl mt-4 mb-2 font-bold text-white text-center">Perrucci Sports</h1>
+        <h1 class="text-4xl mt-4 mb-2 font-bold text-white text-center" id="storeName">Perrucci Sports</h1>
 
         <div class="border-4 border-green-500 px-4 py-1 rounded-lg mt-5 mb-10 " id="date-span">
           <span class="font-medium text-center">Seg à Sab - 10:00 as 20:00</span>
@@ -182,9 +182,9 @@
         </svg>
       </button>
     </div>
-    <p class=" text-center text-gray-900 text-lg font-light my-10">
+    <h6 class=" text-center text-gray-900 text-lg font-light my-10">
       Para acessar mais imagens e obter informações detalhadas, acompanhe-nos em nossas redes sociais. Os links estão disponíveis abaixo.
-    </p>
+    </h6>
   </div>
 </div>
 
@@ -2647,9 +2647,8 @@
 
 
     <!--Modal Cart-->
-    <!--Modal Cart-->
     <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[9999999] items-center justify-center hidden" id="cart-modal">
-      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]" id="address">
+      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px] modal-content" id="address">
         <h2 class="text-center font-bold text-2xl mb-5">Meu carrinho</h2>
 
         <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
@@ -2683,13 +2682,15 @@
         <input 
         type="number" 
         placeholder="CEP (EX: 1234-567)" 
-        class="w-24 border-2 p-1 rounded my-1" 
-        id="time-scheduling">
+        class="w-40 border-2 p-1 rounded my-1" 
+        id="time-scheduling"
+        min="7"
+        max="7">
 
         <input 
         type="text" 
         placeholder="Cidade (Ex: Lisboa, Portugal..)" 
-        class="w-28 border-2 p-1 rounded my-1" 
+        class="w-64 border-2 p-1 rounded my-1" 
         id="time-scheduling">
 
         <div class="flex items-center justify-between mt-5 w-full">
