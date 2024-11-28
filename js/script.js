@@ -218,26 +218,6 @@ checkoutBtn.addEventListener("click", function () {
     return;
   }
 
-   // Valida os campos obrigatórios
-  if (!nameInput || !addressInput || !houseNumberInput || !postalCodeInput || !cityInput) {
-  alert("Por favor, preencha todos os campos obrigatórios.");
-  // Adicionar borda vermelha nos campos vazios
-  if (!nameInput) document.getElementById("nameScheduling").classList.add("border-red-400");
-  if (!addressInput) document.getElementById("time-scheduling").classList.add("border-red-400");
-  if (!houseNumberInput) document.querySelector("input[placeholder='Ex: 123']").classList.add("border-red-400");
-  if (!postalCodeInput) document.querySelector("input[placeholder='CEP (EX: 1234-567)']").classList.add("border-red-400");
-  if (!cityInput) document.querySelector("input[placeholder='Cidade (Ex: Lisboa, Portugal..)']").classList.add("border-red-400");
-  return;
-}
-
-  // Remove classes de erro ao preencher os campos corretamente
-  document.getElementById("nameScheduling").classList.remove("border-red-400");
-  document.getElementById("time-scheduling").classList.remove("border-red-400");
-  document.querySelector("input[placeholder='Ex: 123']").classList.remove("border-red-400");
-  document.querySelector("input[placeholder='CEP (EX: 1234-567)']").classList.remove("border-red-400");
-  document.querySelector("input[placeholder='Cidade (Ex: Lisboa, Portugal..)']").classList.remove("border-red-400");
-
-
   // Calcula o total do carrinho
   const calculateCartTotal = (cart) => {
     return cart.reduce((total, item) => total + item.price * item.quantity, 0);
