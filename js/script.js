@@ -9,10 +9,15 @@ const cartModal = document.getElementById("cart-modal");
 const closeModalBtn = document.getElementById("close-modal-btn");
 const checkoutBtn = document.getElementById("checkout-btn");
 const dateSpan = document.getElementById("date-span");
-const addressInput = document.getElementById("address");
 const addressWarn = document.getElementById("address-warn");
 const nav = document.querySelectorAll(".nav-item");
-const nameScheduling = document.querySelector("#nameScheduling").value;
+const nameInput = document.getElementById("nameScheduling").value.trim();
+const addressInput = document.getElementById("time-scheduling"); // Referência ao elemento
+const addressValue = addressInput.value.trim(); // Captura o valor quando necessário
+const houseNumberInput = document.querySelector("input[placeholder='Ex: 123']").value.trim();
+const postalCodeInput = document.querySelector("input[placeholder='CEP (EX: 1234-567)']").value.trim();
+const cityInput = document.querySelector("input[placeholder='Cidade (Ex: Lisboa, Portugal..)']").value.trim();
+const storeName = document.getElementById("storeName")
 
 let cart = [];
 
@@ -150,7 +155,7 @@ function updateCartModal() {
           <p class="font-medium mt-2">€${item.price.toFixed(2)}</p>
         </div>
 
-        <button class="remove-from-cart-btn" arial-label="${item.name}" data-size="${item.size}">
+        <button class="remove-from-cart-btn" aria-label="${item.name}" data-size="${item.size}">
           Remover
         </button>
       </div>
@@ -206,21 +211,36 @@ addressInput.addEventListener("input", function (event) {
   }
 });
 
-checkoutBtn.addEventListener('click', function () {
-  // Verifica se o carrinho está vazio
-  if (cart.length === 0) return;
-
-  // Verifica se o endereço foi preenchido
-  const addressInputValue = document.getElementById("time-scheduling").value;
-  if (addressInputValue === '') {
-    addressWarn.classList.remove('hidden');
-    document.getElementById("time-scheduling").classList.add('border-red-500');
+checkoutBtn.addEventListener("click", function () {
+  // Verificar se o carrinho está vazio
+  if (cart.length === 0) {
+    alert("O carrinho está vazio. Adicione itens antes de finalizar o pedido.");
     return;
   }
 
+   // Valida os campos obrigatórios
+  if (!nameInput || !addressInput || !houseNumberInput || !postalCodeInput || !cityInput) {
+  alert("Por favor, preencha todos os campos obrigatórios.");
+  // Adicionar borda vermelha nos campos vazios
+  if (!nameInput) document.getElementById("nameScheduling").classList.add("border-red-400");
+  if (!addressInput) document.getElementById("time-scheduling").classList.add("border-red-400");
+  if (!houseNumberInput) document.querySelector("input[placeholder='Ex: 123']").classList.add("border-red-400");
+  if (!postalCodeInput) document.querySelector("input[placeholder='CEP (EX: 1234-567)']").classList.add("border-red-400");
+  if (!cityInput) document.querySelector("input[placeholder='Cidade (Ex: Lisboa, Portugal..)']").classList.add("border-red-400");
+  return;
+}
+
+  // Remove classes de erro ao preencher os campos corretamente
+  document.getElementById("nameScheduling").classList.remove("border-red-400");
+  document.getElementById("time-scheduling").classList.remove("border-red-400");
+  document.querySelector("input[placeholder='Ex: 123']").classList.remove("border-red-400");
+  document.querySelector("input[placeholder='CEP (EX: 1234-567)']").classList.remove("border-red-400");
+  document.querySelector("input[placeholder='Cidade (Ex: Lisboa, Portugal..)']").classList.remove("border-red-400");
+
+
   // Calcula o total do carrinho
   const calculateCartTotal = (cart) => {
-    return cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+    return cart.reduce((total, item) => total + item.price * item.quantity, 0);
   };
 
   const cartTotalAmount = calculateCartTotal(cart).toFixed(2);
@@ -228,18 +248,22 @@ checkoutBtn.addEventListener('click', function () {
   // Itens do carrinho
   const cartItems = cart.map((item) => {
     return (
-      `${item.name}\n Quantidade: (${item.quantity})\n Tamanho: ${item.size}\n Preço: €${item.price} \n\n`
+      `${item.name}\n Quantidade: (${item.quantity})\n Tamanho: ${item.size}\n Preço: €${item.price.toFixed(2)} \n\n`
     );
-  }).join('');  
+  }).join('\n');  
 
   // Formatar a mensagem final para o WhatsApp incluindo a morada
-  const finalMessage =
-    `>> NOVA ENCOMENDA << \n` +
-    `Data: ${new Date().toLocaleString("pt-PT")}\n\n` +
-    `Nome: ${nameScheduling} \n` +
-    `Morada: ${addressInputValue}\n\n` +
-    cartItems + 
-    `Total: €${cartTotalAmount}`;
+  const finalMessage = `
+>> NOVA ENCOMENDA <<
+Data: ${new Date().toLocaleString("pt-PT")}
+Nome: ${nameInput}
+Morada: ${addressInput}, Nº ${houseNumberInput}, CEP: ${postalCodeInput}, Cidade: ${cityInput}
+
+Itens do Carrinho:
+${cartItems}
+
+Total: €${cartTotalAmount}
+  `;
 
   const message = encodeURIComponent(finalMessage);
   const phone = '+351911777657';
@@ -254,40 +278,46 @@ checkoutBtn.addEventListener('click', function () {
   // Mostrar Toastify informando que o pedido foi recebido
   Toastify({
     text: "Seu pedido foi realizado com sucesso! Ele será concluído assim que nossa loja abrir. Obrigado pela compreensão!",
-    duration: 5000,
+    duration: 10000,
     close: true,
-    gravity: "top", // `top` ou `bottom`
-    position: "right", // `left`, `center` ou `right`
-    stopOnFocus: true, // Evita fechar ao passar o mouse
+    gravity: "top",
+    position: "right",
+    stopOnFocus: true,
     style: {
-      background: "#4caf50", // Cor verde para sucesso
+      background: "#4caf50",
     },
-    onClick: function () { } // Callback ao clicar
   }).showToast();
 });
 
 
 
 
-// Verificar a hora e manipular o card horario
-function checkIsOpen() {
-  const data = new Date();
-  const hora = data.getHours();
-  return hora >= 10 && hora < 22;
-}
+document.addEventListener("DOMContentLoaded", function () {
+  const spanItem = document.getElementById("date-span");
 
+  // Verifica se o elemento existe
+  if (!spanItem) {
+    console.error('Elemento com id="date-span" não foi encontrado!');
+    return;
+  }
 
-const spanItem = document.getElementById('date-span')
-const isOpen = checkIsOpen()
+  // Função para verificar se está aberto
+  function checkIsOpen() {
+    const data = new Date();
+    const hora = data.getHours();
+    return hora >= 10 && hora < 22; // Retorna true (aberto) ou false (fechado)
+  }
 
-if (isOpen) {
-  spanItem.classList.remove('border-red-500');
-  spanItem.classList.remove('text-red-500');
-  spanItem.classList.add('border-green-500');
-  spanItem.classList.add('text-green-500');
-} else {
-  spanItem.classList.remove('border-green-600');
-  spanItem.classList.remove('text-green-600');
-  spanItem.classList.add('border-red-500');
-  spanItem.classList.add('text-red-500');
-}
+  // Verifica o estado e altera as classes
+  const isOpen = checkIsOpen();
+
+  if (isOpen) {
+    spanItem.classList.remove("border-red-500", "text-red-500");
+    spanItem.classList.add("border-green-500", "text-green-500");
+    storeName.classList.add("storeNameOn");
+  } else {
+    spanItem.classList.remove("border-green-500", "text-green-500");
+    spanItem.classList.add("border-red-500", "text-red-500");
+    storeName.classList.add("storeName");
+  }
+});
