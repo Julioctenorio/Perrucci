@@ -11,13 +11,8 @@ const checkoutBtn = document.getElementById("checkout-btn");
 const dateSpan = document.getElementById("date-span");
 const addressWarn = document.getElementById("address-warn");
 const nav = document.querySelectorAll(".nav-item");
-const nameInput = document.getElementById("nameScheduling").value.trim();
-const addressInput = document.getElementById("time-scheduling"); // Referência ao elemento
-const addressValue = addressInput.value.trim(); // Captura o valor quando necessário
-const houseNumberInput = document.querySelector("input[placeholder='Ex: 123']").value.trim();
-const postalCodeInput = document.querySelector("input[placeholder='CEP (EX: 1234-567)']").value.trim();
-const cityInput = document.querySelector("input[placeholder='Cidade (Ex: Lisboa, Portugal..)']").value.trim();
 const storeName = document.getElementById("storeName")
+
 
 let cart = [];
 
@@ -201,15 +196,7 @@ function removeCartItemCart(name, size) {
   }
 }
 
-// Evento de input para o endereço
-addressInput.addEventListener("input", function (event) {
-  let inputValue = event.target.value;
 
-  if (inputValue !== "") {
-    addressInput.classList.remove("border-red-500");
-    addressWarn.classList.add("hidden");
-  }
-});
 
 checkoutBtn.addEventListener("click", function () {
   // Verificar se o carrinho está vazio
@@ -217,6 +204,13 @@ checkoutBtn.addEventListener("click", function () {
     alert("O carrinho está vazio. Adicione itens antes de finalizar o pedido.");
     return;
   }
+
+  // Captura os valores dos inputs no momento do envio
+  const nameInput = document.getElementById("nameScheduling").value.trim();
+  const addressInput = document.getElementById("addressScheduling").value.trim();
+  const houseNumberInput = document.getElementById("houseNumberScheduling").value.trim();
+  const postalCodeInput = document.getElementById("postalCodeScheduling").value.trim();
+  const cityInput = document.getElementById("cityScheduling").value.trim();
 
   // Calcula o total do carrinho
   const calculateCartTotal = (cart) => {
@@ -230,19 +224,19 @@ checkoutBtn.addEventListener("click", function () {
     return (
       `${item.name}\n Quantidade: (${item.quantity})\n Tamanho: ${item.size}\n Preço: €${item.price.toFixed(2)} \n\n`
     );
-  }).join('\n');  
+  }).join('\n');
 
   // Formatar a mensagem final para o WhatsApp incluindo a morada
-  const finalMessage = `
->> NOVA ENCOMENDA <<
-Data: ${new Date().toLocaleString("pt-PT")}
-Nome: ${nameInput}
-Morada: ${addressInput}, Nº ${houseNumberInput}, CEP: ${postalCodeInput}, Cidade: ${cityInput}
+  const finalMessage = `  
+>> NOVA ENCOMENDA <<  
+Data: ${new Date().toLocaleString("pt-PT")}  
+Nome: ${nameInput}  
+Morada: ${addressInput}, Nº ${houseNumberInput}, CEP: ${postalCodeInput}, Cidade: ${cityInput}  
 
-Itens do Carrinho:
-${cartItems}
+Itens do Carrinho:  
+${cartItems}  
 
-Total: €${cartTotalAmount}
+Total: €${cartTotalAmount}  
   `;
 
   const message = encodeURIComponent(finalMessage);
