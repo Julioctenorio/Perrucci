@@ -79,6 +79,7 @@ function handleMenuClick(menu) {
     if (parentButton) {
       const name = parentButton.getAttribute("aria-label");
       const price = parseFloat(parentButton.getAttribute("data-price"));
+      const dataName = parentButton.getAttribute("data-name");
 
       // Busca o <select> que está no mesmo nível do botão
       const sizeSelector = parentButton
@@ -95,7 +96,7 @@ function handleMenuClick(menu) {
         return; // Não adiciona ao carrinho se o tamanho não for selecionado
       }
 
-      addToCart(name, price, size);
+      addToCart(name, price, size, dataName);
     }
   });
 }
@@ -105,7 +106,7 @@ handleMenuClick(menu);
 handleMenuClick(secondMenu);
 
 // Função para adicionar no carrinho
-function addToCart(name, price, size) {
+function addToCart(name, price, size, dataName) {
   // Verifica se já existe um item com o mesmo nome e tamanho
   const existingItem = cart.find(
     (item) => item.name === name && item.size === size
@@ -121,6 +122,7 @@ function addToCart(name, price, size) {
       price,
       size,
       quantity: 1,
+      dataName: dataName,
     });
   }
 
@@ -222,7 +224,7 @@ checkoutBtn.addEventListener("click", function () {
   // Itens do carrinho
   const cartItems = cart.map((item) => {
     return (
-      `${item.name}\n Quantidade: (${item.quantity})\n Tamanho: ${item.size}\n Preço: €${item.price.toFixed(2)} \n\n`
+      `${item.name}\n Modelo: ${item.dataName}\n Quantidade: (${item.quantity})\n Tamanho: ${item.size}\n Preço: €${item.price.toFixed(2)} \n\n`
     );
   }).join('\n');
 
@@ -231,7 +233,8 @@ checkoutBtn.addEventListener("click", function () {
 >> NOVA ENCOMENDA <<  
 Data: ${new Date().toLocaleString("pt-PT")}  
 Nome: ${nameInput}  
-Morada: ${addressInput}, Nº ${houseNumberInput}, CEP: ${postalCodeInput}, Cidade: ${cityInput}  
+Morada: ${addressInput}, Nº ${houseNumberInput}, 
+CEP: ${postalCodeInput}, Cidade: ${cityInput}  
 
 Itens do Carrinho:  
 ${cartItems}  
